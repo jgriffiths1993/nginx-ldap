@@ -1,4 +1,4 @@
-FROM ubuntu:14
+FROM ubuntu:latest
 
 MAINTAINER Joshua Griffiths "jgriffiths.1993@gmail.com"
 
