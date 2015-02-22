@@ -5,8 +5,6 @@ MAINTAINER Joshua Griffiths "jgriffiths.1993@gmail.com"
 ENV INITRD no
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN echo "deb http://archive.ubuntu.com/ubuntu trusty universe" >> /etc/apt/sources.list
-
 RUN apt-get -y --force-yes update && \
     apt-get -y --force-yes install liblz-dev git libpcre3-dev libldap2-dev libssl-dev gcc make wget tar
 
