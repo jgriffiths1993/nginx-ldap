@@ -25,8 +25,7 @@ RUN cd /tmp/sources/nginx-1.6.2 &&\
         --group=www-data &&\
     make install
 
-RUN mkdir -p /etc/nginx/conf.d &&\
-    mkdir -p /etc/nginx/sites
+RUN mkdir -p /etc/nginx/conf.d
 
 RUN apt-get -y --force-yes remove gcc make &&\
     apt-get -y --force-yes autoremove
