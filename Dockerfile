@@ -2,12 +2,10 @@ FROM ubuntu:latest
 
 MAINTAINER Joshua Griffiths "jgriffiths.1993@gmail.com"
 
-ENV INITRD no
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get -y --force-yes update && \
-    apt-get -y --force-yes install liblz-dev git libpcre3-dev libldap2-dev libssl-dev gcc make wget tar
-
+    apt-get -y --force-yes install liblz-dev git libpcre3-dev libldap2-dev libssl-dev gcc make wget
 RUN mkdir -p /tmp/sources
 
 RUN wget -qO- http://nginx.org/download/nginx-1.6.2.tar.gz | tar -C /tmp/sources -xzf -
